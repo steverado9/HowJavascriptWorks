@@ -1,0 +1,25 @@
+What is a programme?
+A programme does two things 
+-allocate memory: storing variables in the computeer
+-parse and execute i.e read and run commands
+Memory leak: This happens when we have unused memory, it fills up the memory heap 
+The browser has a Javascript engine(v8 engine) which has a 
+1)Memory heap: A place where it stores variable.
+2)Call stack: read and run commands
+
+Javascript is a single threaded language that can be non-blocking.
+it is single threaded beacuse it has one call stack.
+Meaning it does one thing at a time.
+This also means Javascript is synchronous i.e does one thing at a time(in order).
+stackoverflow: when the call stack is full and overflow.
+
+Javascript is non blocking: if Javascript code is holding up the line, it can move to the next one
+This is where asynchronous Javascript comes in.
+
+What is a Javascript run time environment
+This is part of the browser
+It has extra things apart from the v8 engine,
+we also have 
+-web apis
+-call back queue
+-Event loop
